@@ -46,5 +46,8 @@ blob.detect_language()
 #11. N-Grams
 blob.ngrams(n=3) #returns a tuple of 3 successive words
 
+#12. Definition
+blob.words.definitions #or
+blob.words.define()
 
 
