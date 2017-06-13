@@ -42,6 +42,7 @@ def word_graph(text):
 
 	mask = np.array(Image.open("/home/aviso/Desktop/arrow.jpg"))
 	wordcloud = WordCloud(background_color = 'white', mask = mask).generate(text)
+	# we can use generate_from_frequencies(freq_words)
 	freq_words_polarity = [(word, TextBlob(word).sentiment[0]) for word in freq_words]
 	#freq_words_polarity = [('available', 0.4), ('positive', 0.22727272727272727), ('spread', 0.0), ('negative', -0.3), ('next', 0.0)]
 
